@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/graph-modal.min.css">
+	<title>Лаборатория Тест-Драйв</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-top">
+			<div class="header-top__wrapper">
+				<a href="/" class="logo">
+					<span class="logo__title">Лаборатория</span>
+					<span class="logo__subtitle">Тест-Драйв</span>
+				</a>
+
+				<button class="btn header-top__btn-show" id="button-show" type="button">Вологда</button>
+				<div class="header-top__tultip" id="tooltip">
+					<span class="header-top__text">Ваш город – <span>Вологда?</span></span>
+					<button class="btn header-top__btn-hide" id="button-hide" type="button">Да</button>
+					<button class="btn header-top__btn-outline" type="button">Нет, другой</button>
+				</div>
+
+				<div class="header-top__adress">Зосимовская 9, офис 3</div>
+				<a href="tel:88172222222" class="header-top__phone">8 (8172) 22-22-22</a>
+				<a href="#" class="header-top__whatsapp">
+					<img src="img/whatsapp.png" alt="whatsapp">
+				</a>
+
+				<button class="header-top__order btn-reset" type="button" data-graph-path="order">Заказать звонок</button>
+			</div>
+
+		</div>
+		<div class="header-nav">
+			<nav class="header-nav__list">
+				<a class="header-nav__linck" href="#">Услуги</a>
+				<a class="header-nav__linck" href="#">Стоимость</a>
+				<a class="header-nav__linck" href="#">Портфолио</a>
+				<a class="header-nav__linck" href="#">Контакты</a>
+			</nav>
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="container">
+			<div class="hero__content">
+				<span class="hero__subtitle">Поможем оформить изменения ТС в ГИБДД</span>
+				<h1 class="hero__title">
+					<span class="hero__title-underline">Регистрация</span>
+					<span class="hero__title-underline">переоборудований</span>
+					автомобилей
+					<span class="hero__title-accent">в Вологде</span>
+				</h1>
+			</div>
+			<div class="hero-form">
+				<p class="hero-form__text">Уже внесли изменения в авто и нужно срочно их зарегистрировать? Мы сможем помочь!</p>
+				<form class="form hero-form__content" action="GET">
+					<input type="tel" name="phone" class="form__input" aria-label="Номер" placeholder="+ 7(____)-___-__-__">
+					<button class="btn form__btn" type="button">Оставить заявку</button>
+				</form>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="advantage">
+		<div class="container">
+			<div class="advantage__wrapper">
+				<div class="advantage__item">
+					<div class="advantage__img">
+						<img src="img/contract.png" alt="Договор">
+					</div>
+					<span class="advantage__tatle">Договор со 100% гарантией результата</span>
+				</div>
+				<div class="advantage__item">
+					<div class="advantage__img">
+						<img src="img/change.png" alt="Изменения">
+					</div>
+					<span class="advantage__tatle">Вносим 470+<br> видов изменений в ТС</span>
+				</div>
+				<div class="advantage__item">
+					<div class="advantage__img">
+						<img src="img/register.png" alt="Регистрация">
+					</div>
+					<span class="advantage__tatle">Регистрируем<br> «под ключ»</span>
+				</div>
+				<div class="advantage__item">
+					<div class="advantage__img">
+						<img src="img/car.png" alt="Машина">
+					</div>
+					<span class="advantage__tatle">Все категории транспортных средств</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="servise">
+		<div class="container servise__container">
+			<h2 class="section-title servise__title">
+				<span>Чаще всего</span> регистрируют изменения
+			</h2>
+			<div class="swiper servise-swiper">
+				<div class="swiper-wrapper servise-swiper__wrapper">
+					<div class="swiper-slide servise-swiper__slider">
+						<div class="servise-swiper__flex">
+							<span class="servise-swiper__text">Оформлено <span>17 000 раз</span></span>
+							<a href="#" class="servise-swiper__item">
+								<div class="servise-swiper__img">
+									<img src="img/servise_1.png" alt="Двигатель">
+								</div>
+								<h3 class="servise-swiper__tatle">Замена или СВАП двигателя любой мощнос</h3>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide servise-swiper__slider">
+						<div class="servise-swiper__flex">
+							<span class="servise-swiper__text">Оформлено <span>6 000 раз</span></span>
+							<a href="#" class="servise-swiper__item">
+								<div class="servise-swiper__img">
+									<img src="img/servise_2.png" alt="Смена категории">
+								</div>
+								<h3 class="servise-swiper__tatle">Смена категории&nbsp;ТС (D &gt; B, D &gt; C)</h3>
+							</a>
+						</div>
+
+					</div>
+					<div class="swiper-slide servise-swiper__slider">
+						<div class="servise-swiper__flex">
+							<span class="servise-swiper__text">Оформлено <span>12 000 раз</span></span>
+							<a href="#" class="servise-swiper__item">
+								<div class="servise-swiper__img">
+									<img src="img/servise_3.png" alt="Джиповый тюнинг">
+								</div>
+								<h3 class="servise-swiper__tatle">Джиповый тюнинг: шноркель, фаркоп, обвесы и пр.</h3>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide servise-swiper__slider">
+						<div class="servise-swiper__flex">
+							<span class="servise-swiper__text">Оформлено <span>500 раз</span></span>
+							<a href="#" class="servise-swiper__item">
+								<div class="servise-swiper__img">
+									<img src="img/servise_4.png" alt="Установка КМУ">
+								</div>
+								<h3 class="servise-swiper__tatle">Установка КМУ (ГМУ) крана манипулятора</h3>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide servise-swiper__slider">
+						<div class="servise-swiper__flex">
+							<span class="servise-swiper__text">Оформлено <span>500 раз</span></span>
+							<div class="servise-swiper__item">
+								<div class="servise-swiper__img">
+									<img src="img/servise_4.png" alt="КМУ">
+								</div>
+								<h3 class="servise-swiper__tatle">Установка КМУ (ГМУ) крана манипулятора</h3>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide servise-swiper__slider">
+						<div class="servise-swiper__flex">
+							<span class="servise-swiper__text">Оформлено <span>500 раз</span></span>
+							<a href="#" class="servise-swiper__item">
+								<div class="servise-swiper__img">
+									<img src="img/servise_4.png" alt="КМУ">
+								</div>
+								<h3 class="servise-swiper__tatle">Установка КМУ (ГМУ) крана манипулятора</h3>
+							</a>
+						</div>
+					</div>
+					<div class="swiper-slide servise-swiper__slider">
+						<div class="servise-swiper__flex">
+							<span class="servise-swiper__text">Оформлено <span>500 раз</span></span>
+							<a href="#" class="servise-swiper__item">
+								<div class="servise-swiper__img">
+									<img src="img/servise_4.png" alt="КМУ">
+								</div>
+								<h3 class="servise-swiper__tatle">Установка КМУ (ГМУ) крана манипулятора</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-prev"></div>
+			<div class="swiper-next"></div>
+		</div>
+	</section>
+
+	<div class="graph-modal">
+		<div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="order">
+			<button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+			<div class="graph-modal__content">
+				<h4 class="graph-modal__text">Заказать звонок</h4>
+				<form class="form graph-modal__form" action="GET">
+					<input type="tel" name="phone" class="form__input graph-modal__input" aria-label="Номер" placeholder="+ 7(____)-___-__-__">
+					<button class="btn form__btn graph-modal__btn-form" type="button">Заказать звонок</button>
+					<label class="form__label">
+						<input class="form__checkbox" type="checkbox" name="polici" id="polici">
+						<span class="form__text">
+							Я ознакомлен и принимаю условия пользовательского соглашения и согласен с 
+							<a class="form__link" href="#">условиями обработки персональных данных</a>
+						</span>
+					</label>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/graph-modal.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
